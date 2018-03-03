@@ -1,0 +1,16 @@
+{
+    "name": "osvaldoabel/acl",
+    "license": "Mit",
+    "authors": [
+        {
+            "name": "Osvaldo Abel",
+            "email": "osvalldo.abel@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "YaniPHP\\Acl\\": "src/"
+        }
+    }
+}
