@@ -4,7 +4,7 @@ A Simple ACL PHP Package
 
 
 
-. Exampless
+. Examples
 
 $permission = new \YaniPHP\Acl\Entities\Permission;
 $permission->setName("view");
