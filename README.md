@@ -4,7 +4,7 @@ A Simple ACL PHP Package
 
 
 
-. Examples
+### Examples
 
 $permission = new \YaniPHP\Acl\Entities\Permission;
 $permission->setName("view");
@@ -31,9 +31,9 @@ $user2->setId(2);
 $acl = new \YaniPHP\Acl\Acl($roles, $resources);
 $acl->setUSer($user1);
 
--- verifying if user1 is the owner of a resource (Book)
+Verifying if user1 is the owner of a resource (Book)  
 var_dump($acl->isOwner($book, $user1));
 
--- verifying if user2 can (has permission to ) View the book
+Verifying if user2 can (has permission to ) View the book  
 var_dump($acl->can('view', $user2));
 
