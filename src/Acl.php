@@ -40,7 +40,7 @@ class Acl
     public function hasRole(string $role) : bool
     {
         foreach ($this->roles as $r) {
-            if ($r>getName() == $role) {
+            if ($r->getName() == $role) {
                 return true;
             }
         }
