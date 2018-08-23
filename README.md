@@ -7,9 +7,10 @@ A Simple ACL PHP Package
 ### Examples
 
 $permission = new \YaniPHP\Acl\Entities\Permission;
+
 $permission->setName("view");
 
-$role = new \YaniPHP\Acl\Entities\Role("supervisor");
+$role = new \YaniPHP\Acl\Entities\Role("supervisor");  
 $role->addPermission($permission);
 
 $roles[] = $role;
