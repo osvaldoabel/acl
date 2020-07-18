@@ -6,15 +6,15 @@ namespace YaniPHP\Acl\Entities;
 
 class Permission
 {
-    protected $name;
+    private $name;
 
     public function __construct(string $name = null) 
     {
-
+        $this->name = $name;
     }
 
     /**
-     * Undocumented function
+     * Get permission name
      *
      * @return void
      */
@@ -24,9 +24,9 @@ class Permission
     }
 
     /**
-     * Undocumented function
+     * Set permission name
      *
-     * @param [type] $name
+     * @param [string] $name
      * @return Permission
      */
     public function setName($name) : Permission
